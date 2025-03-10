@@ -1,0 +1,164 @@
+﻿.page {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    width: 100%;
+    color: white;
+}
+
+body {
+    background-image: url('/images/woodbackground.jpg'); /* Make sure the path is correct */
+    background-size: cover; /* Scales image to cover the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+.welkomcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Algerian;
+    font-size: 36px;
+    color: white;
+}
+
+.statblok, .infoblok {
+    background-image: url('/images/woodbackground.jpeg');
+}
+
+.statblok {
+    display: flex;
+    flex: 1; /* Each takes up equal space */
+    width: 100%;
+    border: groove;
+    
+}
+
+.postsblok {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.postsblok, .infoblok {
+    display: flex;
+    flex: 1; /* Each takes up equal space */
+    width: 100%;
+    border: groove;
+}
+
+.post {
+    display: flex;
+    margin-bottom: 20px;
+    border: solid yellow;
+    width: 90%;
+    min-height: 200px;
+    flex-direction: column;
+    background-image: url('/Images/postbackground.jpg');
+    background-size: cover;
+}
+
+.nameposter {
+}
+
+.textposter {
+    height: 75%;
+}
+
+.postlikecounter {
+
+}
+
+.likedislikecontainer {
+    display: flex;
+    justify-content: space-between;
+    border: dotted;
+    height: 100%;
+    flex-direction: row;
+    background-color: white;
+}
+
+.likebutton, .dislikebutton {
+    flex: 1; /* Allow the buttons to take equal space */
+    height: 100%; /* Make buttons fill the height of the container */
+    background-size: contain; /* Ensure background image covers the entire button */
+    background-position: center; /* Center the image within the button */
+    background-repeat: no-repeat;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.likebutton {
+    background-image: url('/Images/blijeKoffie.png');
+}
+
+.dislikebutton {
+    background-image: url('/Images/sadKoffie.png');
+}
+
+.loginblok, .categorieblok, .filterblok, .leaderboardposts, .leaderboardlikes, .postscounter {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    border: groove;
+}
+
+.loginblok {
+    border-color: aqua;
+}
+
+.categorieblok {
+    border-color: red;
+}
+
+.filterblok {
+    border-color: greenyellow;
+}
+
+.leaderboardposts {
+    border-color: blue
+}
+
+.leaderboardlikes {
+    border-color: hotpink;
+}
+
+.postscounter {
+    border-color: gold
+}
+
+@media only screen and (min-width: 800px) {
+
+    .page {
+        display: flex;
+        flex-direction: row;
+    }
+    .welkomcontainer {
+        font-size: 72px;
+    }
+    .statblok, .infoblok {
+        flex: 0 0 15%; /* Take up 15% width each */
+        max-height: 600px;
+    }
+
+    .postsblok {
+        flex: 0 0 70%; /* Take up 70% width */
+        min-height: 200px;
+        margin-top: 0px;
+    }
+
+    .statblok {
+        order: 99;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .infoblok {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .loginblok, .categorieblok, .filterblok, .leaderboardposts, .leaderboardlikes, .postscounter {
+        min-height: auto;
+    }
+}

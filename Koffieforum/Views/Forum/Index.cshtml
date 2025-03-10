@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Koffieforum";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/koffieforum.css" asp-append-version="true" />
+}
+
+<div class="welkomcontainer">
+    Welkom op het koffieforum
+</div>
+
+<div class="page">
+    <div class="infoblok">
+        <div class="loginblok">
+            Hier login
+        </div>
+
+        <div class="categorieblok">
+            Hier categorie
+        </div>
+
+        <div class="filterblok">
+            Hier filters
+        </div>
+    </div>
+
+    <div class="statblok">
+        <div class="postscounter">
+            posts counter
+        </div>
+
+        <div class="leaderboardposts">
+            leaderboard posts
+        </div>
+
+        <div class="leaderboardlikes">
+            leaderboard likes
+        </div>
+    </div>
+
+    <div class="postsblok">
+        @for (int i = 0; i < 5; i++)
+        {
+            <div class="post">
+                <div class="nameposter">
+                    Ruben @i
+                </div>
+
+                <div class="textposter">
+                    Hier is een bericht 
+                </div>    
+                
+                <div class="postlikecounter">
+                    0
+                </div>
+
+                <div class="likedislikecontainer">
+                    <button class="likebutton">
+                        Like!
+                    </button>
+
+                    <button class="dislikebutton">
+                        Dislike!
+                    </button>
+                </div>
+
+            </div>
+        }        
+        
+        Derde regel
+    </div>
+</div>
