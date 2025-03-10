@@ -78,13 +78,13 @@ body {
 }
 
 .likebutton, .dislikebutton {
-    flex: 1; /* Allow the buttons to take equal space */
-    height: 100%; /* Make buttons fill the height of the container */
-    background-size: contain; /* Ensure background image covers the entire button */
-    background-position: center; /* Center the image within the button */
+    flex: 1; 
+    height: 100%; 
+    background-size: contain; 
+    background-position: center; 
     background-repeat: no-repeat;
-    border: none; /* Remove default border */
-    cursor: pointer; /* Change cursor to pointer */
+    border: none; 
+    cursor: pointer; 
 }
 
 .likebutton {
@@ -98,8 +98,8 @@ body {
 .loginblok, .categorieblok, .filterblok, .leaderboardposts, .leaderboardlikes, .postscounter {
     display: flex;
     flex: 1;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    justify-content: center; 
+    align-items: center; 
     border: groove;
 }
 
